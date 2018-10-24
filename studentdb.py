@@ -31,6 +31,7 @@ class StudentDB(BoxLayout):
             self.student_list.adapter.data.remove(selection)
             # Reset the ListView
             self.student_list._trigger_reset_populate()
+
     def replace_students(self):
         # make sure student is selected
         if self.student_list.adapter.selection:
